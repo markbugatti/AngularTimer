@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <label for="hoursInput">Hours</label>
+            <input type="email" class="form-control" id="hoursField" placeholder="0" value="{{hours}}" readonly>
+          </div>
+          <div class="col">
+            <label for="hoursInput">Minutes</label>
+            <input type="email" class="form-control" id="minutesField" placeholder="0" value="{{minutes}}" readonly>
+          </div>
+          <div class="col">
+            <label for="hoursInput">Seconds</label>
+            <input type="email" class="form-control" id="secondsField" placeholder="0" value="{{seconds}}" readonly>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="btn mt-3 btn-primary" (click)="startStop()" >Start/Stop</button>
+          </div>
+          <div class="col">
+            <button class="btn mt-3 btn-primary" id="resetButton">Wait</button>
+          </div>
+          <div class="col">
+            <button class="btn mt-3 btn-primary" (click)="reset()">Reset</button>
+          </div>
+        </div>
+      </div>
+      
+    
+    </div>  
+  </div>
+</div>
+
